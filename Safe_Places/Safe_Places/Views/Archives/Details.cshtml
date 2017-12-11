@@ -1,0 +1,82 @@
+﻿@model Safe_Places.Models.Archive
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Archive</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Business_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Business_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Situation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Situation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.If_other)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.If_other)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Resolved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Resolved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Critical)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Critical)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Archive_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Archive_Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Archive_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
