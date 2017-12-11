@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Safe_Places", "Safe_Places\Safe_Places.csproj", "{EDB61F7F-44F6-47DE-AE28-6A89B6F2CBDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDB61F7F-44F6-47DE-AE28-6A89B6F2CBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB61F7F-44F6-47DE-AE28-6A89B6F2CBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB61F7F-44F6-47DE-AE28-6A89B6F2CBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB61F7F-44F6-47DE-AE28-6A89B6F2CBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {167CF4D2-2334-4699-A818-584D0A868E03}
+	EndGlobalSection
+EndGlobal

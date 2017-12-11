@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Safe_Places.Models.Archive>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="container" style="overflow-x:auto;">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Situation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.If_other)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Resolved)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Critical)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Details)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Archive_Date)
+            </th>
+            <th></th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Employee_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Situation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.If_other)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Resolved)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Critical)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Details)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Archive_Date)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Archive_ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Archive_ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Archive_ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
