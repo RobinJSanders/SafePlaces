@@ -15,6 +15,7 @@ namespace Safe_Places.Models
     public partial class Location
     {
         public int location_Id { get; set; }
+        public string Business_name { get; set; }
         public string Pin { get; set; }
     }
 }

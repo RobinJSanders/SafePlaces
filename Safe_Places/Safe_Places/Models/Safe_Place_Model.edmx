@@ -41,7 +41,6 @@
           </Key>
           <Property Name="Archive_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Employee_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Business_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Situation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="If_other" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Resolved" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
@@ -54,6 +53,7 @@
             <PropertyRef Name="location_Id" />
           </Key>
           <Property Name="location_Id" Type="Int32" Nullable="false" />
+          <Property Name="Business_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Pin" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Safe_Places_DatabaseEntities" annotation:LazyLoadingEnabled="true">
@@ -71,7 +71,6 @@
               <MappingFragment StoreEntitySet="Archive">
                 <ScalarProperty Name="Archive_ID" ColumnName="Archive_ID" />
                 <ScalarProperty Name="Employee_name" ColumnName="Employee_name" />
-                <ScalarProperty Name="Business_name" ColumnName="Business_name" />
                 <ScalarProperty Name="Situation" ColumnName="Situation" />
                 <ScalarProperty Name="If_other" ColumnName="If_other" />
                 <ScalarProperty Name="Resolved" ColumnName="Resolved" />
@@ -85,6 +84,7 @@
             <EntityTypeMapping TypeName="Safe_Places_DatabaseModel.Location">
               <MappingFragment StoreEntitySet="Location">
                 <ScalarProperty Name="location_Id" ColumnName="location_Id" />
+                <ScalarProperty Name="Business_name" ColumnName="Business_name" />
                 <ScalarProperty Name="Pin" ColumnName="Pin" />
               </MappingFragment>
             </EntityTypeMapping>

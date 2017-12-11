@@ -46,7 +46,7 @@ namespace Safe_Places.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Archive_ID,Employee_name,Business_name,Situation,If_other,Resolved,Critical,Details,Archive_Date")] Archive archive)
+        public ActionResult Create([Bind(Include = "Archive_ID,Employee_name,Situation,If_other,Resolved,Critical,Details,Archive_Date")] Archive archive)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Safe_Places.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Archive_ID,Employee_name,Business_name,Situation,If_other,Resolved,Critical,Details,Archive_Date")] Archive archive)
+        public ActionResult Edit([Bind(Include = "Archive_ID,Employee_name,Situation,If_other,Resolved,Critical,Details,Archive_Date")] Archive archive)
         {
             if (ModelState.IsValid)
             {
