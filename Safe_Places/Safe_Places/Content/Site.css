@@ -175,3 +175,22 @@ textarea {
         height: 200px;
     }
 }
+
+
+.keycontactspage-container {
+    background-color: #f5b432;
+    max-width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.content-keycontactspage {
+    position: relative;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 75px 75px 75px 75px;
+    height:450px;
+    max-width: 90%;
+    top: 100px;
+    padding-left: 10px;
+}

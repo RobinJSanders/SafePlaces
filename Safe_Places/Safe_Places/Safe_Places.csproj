@@ -279,6 +279,9 @@
     <Content Include="Views\Archives\Details.cshtml" />
     <Content Include="Views\Archives\Edit.cshtml" />
     <Content Include="Views\Archives\Index.cshtml" />
+    <Content Include="Views\Home\HowToHelp.cshtml" />
+    <Content Include="Views\Home\Locations.cshtml" />
+    <Content Include="Views\Home\KeyContacts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

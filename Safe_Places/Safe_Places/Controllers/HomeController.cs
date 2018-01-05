@@ -40,5 +40,28 @@ namespace Safe_Places.Controllers
 
             return View();
         }
+
+
+        public ActionResult HowToHelp()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
+        public ActionResult KeyContacts()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
+        public ActionResult Locations()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
     }
 }
