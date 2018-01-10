@@ -282,6 +282,7 @@
     <Content Include="Views\Home\HowToHelp.cshtml" />
     <Content Include="Views\Home\Locations.cshtml" />
     <Content Include="Views\Home\KeyContacts.cshtml" />
+    <Content Include="Views\Home\General.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

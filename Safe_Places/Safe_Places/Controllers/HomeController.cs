@@ -63,5 +63,12 @@ namespace Safe_Places.Controllers
             return View();
         }
 
+        public ActionResult General()
+        {
+            ViewBag.Message = "";
+
+            return View();
+        }
+
     }
 }

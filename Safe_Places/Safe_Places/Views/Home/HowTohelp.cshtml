@@ -1,29 +1,54 @@
-﻿@{
+﻿
+@{
+    ViewBag.Title = "Howtohelp";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
-<p style="font-size: x-large; text-align:center">Common Situations and how to help</p>
 
-<div>
-    <div class="reportpage-table" style="background-color:#fac67e; ">
-        <p class="large-white-text">Lost</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    <div class="reportpage-table" style="background-color:#fea045; height:160px">
-        <p class="large-white-text">In Pain</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    <div class="reportpage-table" style="background-color:#ffad2c; height:160px">
-        <p class="large-white-text">Distressed</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    <div class="reportpage-table" style="background-color:#fea212; height:160px">
-        <p class="large-white-text">Chat</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    <div class="reportpage-table" style="background-color:#ff6a00; height:160px">
-        <p class="large-white-text">Missed Transport</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+<div class="central-container" style="height: 800px">
+    <div class="content-central" style="height: 600px">
+            <div class="col-xs-12">
+                <br>
+                <h2 class="orange-bold-text">How To Help</h2>
+                <br />
+                Click on one Option and find out how to help a vulnerable person.
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <button class="btn" onclick="location.href='@Url.Action("General", "Home")'">General</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <button class="btn-orangetext" onclick="location.href='@Url.Action("General", "Home")'">Distressed</button>
+                    </div>
+                </div>
+                </br>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <button class="btn-orangetext" onclick="location.href='@Url.Action("General", "Home")'">Lost</button>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <button class="btn" onclick="location.href='@Url.Action("General", "Home")'">Chat</button>
+                        </div>
+                    </div>
+                </br>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6">
+                                <button class="btn" onclick="location.href='@Url.Action("General", "Home")'">In Pain</button>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                                <button class="btn-orangetext" onclick="location.href='@Url.Action("General", "Home")'">Missed Transport</button>
+                            </div>
+                        </div>
+                </br>
+
+
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
