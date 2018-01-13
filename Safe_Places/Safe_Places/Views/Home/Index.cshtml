@@ -3,23 +3,53 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="loginPage-container">
-    <div class="content-login">
-        <form name="pin" id="pin" class="form-horizontal">
-            <br />
-            <div style="text-align:center; font-size:larger; ">Log In </div>
-            <div class="form-group">
-                <div style="text-align:center" class="col-md-12 control-label" for="pin">Enter Your Pin</div>
-                <input id="pin" name="pin" style="text-align:center; width:50%; margin-left:25%" type="password" class="form-control input-md" required="">
-                <button type="submit" class="btn" style="width:auto; height:auto" form="pin" value="Submit">submit</button>
-                <div class="small-grey-text" style="text-align:center">
-                    <p>
-                        the pin for this prototype is: 1001 </br>
-                        (this text will be removed with full release)
-                    </p>
-                </div>
+<div class="index-container row">
+    <div class="content-left  col-xs-10 col-sm-5">
+        <br />
+        <br />
+        <h3>
+            Together we can make it
+            <span class="orange-bold-text">safe place!</span>
+        </h3>
 
+
+        <div class="row">
+            <div class="col-xs-10">
+                We are here to make places
+                where vulnerable people can
+                go to talk, ask for help or call
+                to someone they trust.
             </div>
+
+            <div class="col-xs-2">
+                <img src="~/Images/Logo-Small.png" height="60" width="60" />
+            </div>
+
+        </div>
+
+
+
+        <form action="" method="get" id="emailForm">
+            <input id="email" name="email" type="text" placeholder="e-mail address" class="form-control input-md">
+            <button type="button" form="emailForm">submit</button>
         </form>
     </div>
+</div>
+<div class="orange-container" style="height:60px;">
+
+</div>
+<row>
+    <img src="~/Images/home_p_bg.jpg" style="max-width: 100%; background-size: cover;"/>
+</row>
+<div class="col-sm-12" style="text-align:center">
+    <p>
+        <br /> The safe place scheme provides reassurance to vulnerable people and their carers, or
+        people who find themselves in chalenging situations, so that they can live more
+        independent lifestyles knowing that there is help available when they are out and about.
+    </p>
+    <br />
+    <button class="btn" onclick="location.href='@Url.Action("About", "Home")'">Find out More</button>
+    <br /><br />
+</div>
+<div class="orange-container" style="height:60px;">
 </div>

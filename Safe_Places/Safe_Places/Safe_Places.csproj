@@ -218,6 +218,7 @@
     <Content Include="Images\Banner_logo.bmp" />
     <Content Include="Images\Clasped_Hands.jpeg" />
     <Content Include="Images\Fist_Bump.jpeg" />
+    <Content Include="Images\home_p_bg.jpg" />
     <Content Include="Images\Logo-Small.png" />
     <Content Include="Images\logo-transparent.png" />
     <Content Include="Images\logo.png" />
@@ -283,6 +284,7 @@
     <Content Include="Views\Home\Locations.cshtml" />
     <Content Include="Views\Home\KeyContacts.cshtml" />
     <Content Include="Views\Home\General.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
